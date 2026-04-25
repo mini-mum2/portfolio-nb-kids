@@ -1,0 +1,135 @@
+/* ====================================================================== (고정) 위로가기 버튼 */
+#wrap main .to_top_detail {position: fixed; right: 650px; bottom: 50px; z-index: 999;}
+#wrap main .to_top_detail img {width: 100%;}
+/* ====================================================================== main */
+#wrap .detail_pg {padding: 70px 20px 0 80px;}
+
+#wrap .detail_pg .detail_wrap {
+    display: grid; grid-template-columns: 1fr 600px;
+    gap: 20px; padding: 100px 0;
+    align-items: stretch;
+}
+
+#wrap .detail_pg .detail_wrap .d_left {
+    grid-column: 1;
+    min-width: 0; /* 그리드 내부 요소가 이미지 크기 때문에 터지는 것 방지 */
+}
+/* ===================================================================== 이미지 스와이퍼 */
+#wrap .detail_pg .detail_wrap .d_left .detail_swiper {width: 100%;}
+#wrap .detail_pg .detail_wrap .d_left .detail_swiper .swiper-wrapper {}
+#wrap .detail_pg .detail_wrap .d_left .detail_swiper .swiper-wrapper .swiper-slide {}
+#wrap .detail_pg .detail_wrap .d_left .detail_swiper .swiper-wrapper .swiper-slide img {width: 100%;}
+
+/* ===================================================================== 하단 영역(탭+상세) */
+#wrap .detail_pg .detail_wrap .d_left .tab_body {grid-column: 1;}
+#wrap .detail_pg .detail_wrap .d_left .tab_body .detail_tab {display: flex;}
+#wrap .detail_pg .detail_wrap .d_left .tab_body .detail_tab > a {
+    font-size: 1.19rem; border-bottom: 1px solid #bdbdbd;
+    padding: 25px 0; flex: 1; text-align: center;
+}
+#wrap .detail_pg .detail_wrap .d_left .tab_body .detail_tab > a.active {border-bottom: 2px solid #000; font-weight: 600;}
+#wrap .detail_pg .detail_wrap .d_left .tab_body .detail_body {}
+#wrap .detail_pg .detail_wrap .d_left .tab_body .detail_body .detail_img {}
+#wrap .detail_pg .detail_wrap .d_left .tab_body .detail_body .detail_img img {width: 100%;}
+#wrap .detail_pg .detail_wrap .d_left .tab_body .detail_body .info_list {padding:0 0 0 20px;}
+#wrap .detail_pg .detail_wrap .d_left .tab_body .detail_body .info_list li {border-bottom: 1px solid #bdbdbd;}
+#wrap .detail_pg .detail_wrap .d_left .tab_body .detail_body .info_list li > a {
+    display: block; padding: 30px 0 20px 0; font-size: 1.19rem; font-weight: 500;
+    position: relative;
+}
+#wrap .detail_pg .detail_wrap .d_left .tab_body .detail_body .info_list li > a::after {
+    content: ''; position: absolute; right: 0; top: 50%; transform: translateY(-50%) rotate(-90deg);
+    background-image: url(../images/common/arrow_btm.svg);
+    width: 40px; height: 40px; background-repeat: no-repeat; background-position: center;
+}
+
+/* ===================================================================== 고정 sticky 영역 */
+#wrap .detail_pg .detail_wrap .d_right {
+    grid-column: 2;
+    position: sticky; top: 115px;
+    max-height: calc(100vh - 115px); overflow-y: auto;
+    padding: 30px 20px; align-self: start;
+}
+#wrap .detail_pg .detail_wrap .d_right .cate_top {margin-bottom: 30px;}
+#wrap .detail_pg .detail_wrap .d_right .cate_top > span {}
+#wrap .detail_pg .detail_wrap .d_right .cate_top > span:first-child::after {
+    content: ''; width: 12px; height: 12px; display: inline-block;
+    background-image: url(../images/common/arrow_btm.svg);
+    background-position: center; background-size: contain; background-repeat: no-repeat;
+    transform: rotate(-90deg); margin: 0 5px;
+}
+#wrap .detail_pg .detail_wrap .d_right .name {
+    font-size: 1.5rem;
+}
+#wrap .detail_pg .detail_wrap .d_right .price {
+    margin: 30px 0 40px 0; font-size: 1.2rem; font-weight: 600;
+}
+#wrap .detail_pg .detail_wrap .d_right .meta_box {
+    display: flex; justify-content: space-between; align-items: center;
+    position: relative; padding-bottom: 20px;
+}
+#wrap .detail_pg .detail_wrap .d_right .meta_box::after { /* 구분선 */
+    content: ''; position: absolute; left: 0; bottom: 0; background: #bdbdbd;
+    width: 100%; height: 1px;
+}
+#wrap .detail_pg .detail_wrap .d_right .meta_box .star_review {}
+#wrap .detail_pg .detail_wrap .d_right .meta_box .star_review > span {font-size: 0.94rem}
+#wrap .detail_pg .detail_wrap .d_right .meta_box .star_review > .review {
+    margin-left: 15px; font-size: 0.94rem; text-decoration: underline;
+}
+#wrap .detail_pg .detail_wrap .d_right .meta_box .wish_share {
+    display: flex; align-items: center;
+}
+#wrap .detail_pg .detail_wrap .d_right .meta_box .wish_share a img {width: 100%;}
+#wrap .detail_pg .detail_wrap .d_right .meta_box .wish_share .wish_btn {}
+#wrap .detail_pg .detail_wrap .d_right .meta_box .wish_share .share_btn {}
+/* --------------------------------------------------------------------- 옵션 공통태그 */
+#wrap .detail_pg .detail_wrap .d_right .option_box {}
+#wrap .detail_pg .detail_wrap .d_right .option_box .option {}
+#wrap .detail_pg .detail_wrap .d_right .option_box .option {}
+#wrap .detail_pg .detail_wrap .d_right .option_box .option .op_title {margin-bottom: 15px;}
+#wrap .detail_pg .detail_wrap .d_right .option_box .option .op_list {}
+#wrap .detail_pg .detail_wrap .d_right .option_box .option .op_list li {}
+#wrap .detail_pg .detail_wrap .d_right .option_box .option .op_list li > a {}
+#wrap .detail_pg .detail_wrap .d_right .option_box .option .op_list li > a img {width: 100%;}
+/* --------------------------------------------------------------------- 옵션(색상) */
+#wrap .detail_pg .detail_wrap .d_right .option_box .color {
+    margin: 30px 0 50px 0;
+}
+#wrap .detail_pg .detail_wrap .d_right .option_box .option {}
+#wrap .detail_pg .detail_wrap .d_right .option_box .color .op_list {display: flex; gap: 10px;}
+#wrap .detail_pg .detail_wrap .d_right .option_box .color .op_list li {}
+#wrap .detail_pg .detail_wrap .d_right .option_box .color .op_list li a {
+    display: flex; flex-flow: column nowrap; color: #777;
+    font-size: 0.81rem; gap: 10px; text-align: center;
+}
+#wrap .detail_pg .detail_wrap .d_right .option_box .color .op_list li a.active {color: #000;}
+#wrap .detail_pg .detail_wrap .d_right .option_box .color .op_list li a.active img {border: 1.5px solid #000;}
+#wrap .detail_pg .detail_wrap .d_right .option_box .color .op_list li a img {width: 80px; border-radius: 6px;}
+/* --------------------------------------------------------------------- 옵션(사이즈) */
+#wrap .detail_pg .detail_wrap .d_right .option_box .size {}
+#wrap .detail_pg .detail_wrap .d_right .option_box .size .op_list {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;
+}
+#wrap .detail_pg .detail_wrap .d_right .option_box .size .op_list > li {}
+#wrap .detail_pg .detail_wrap .d_right .option_box .size .op_list > li a {
+    display: block; border: 1px solid #bdbdbd; border-radius: 30px; text-align: center; 
+    font-size: 0.88rem; line-height: 40px;
+}
+#wrap .detail_pg .detail_wrap .d_right .option_box .size .op_list > li a.active {border: 1px solid #000;}
+#wrap .detail_pg .detail_wrap .d_right .option_box .size .op_list > li a.soldout {
+    color: #777; background: #eee; border: none;
+}
+/* --------------------------------------------------------------------- 재입고 알림 신청 */
+#wrap .detail_pg .detail_wrap .d_right .alarm {}
+#wrap .detail_pg .detail_wrap .d_right .alarm > a {display: flex; align-items: center; gap: 6px; margin-top: 20px;}
+#wrap .detail_pg .detail_wrap .d_right .alarm > a img {width: 17px;}
+#wrap .detail_pg .detail_wrap .d_right .alarm > a span {font-size: 0.88rem; font-weight: 500;}
+/* --------------------------------------------------------------------- 장바구니 / 구매하기 버튼 */
+#wrap .detail_pg .detail_wrap .d_right .cart_buy {
+    display: grid; gap: 10px; grid-template-columns: 0.3fr 0.7fr; margin-top: 30px;
+}
+#wrap .detail_pg .detail_wrap .d_right .cart_buy > a {padding: 20px 0; text-align: center; border-radius: 6px; font-size: 1.13rem;}
+#wrap .detail_pg .detail_wrap .d_right .cart_buy .cart_btn {border: 1px solid #bdbdbd;}
+#wrap .detail_pg .detail_wrap .d_right .cart_buy .buy_btn {background: #CF0A2C; color: #fff;}
+

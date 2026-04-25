@@ -1,0 +1,219 @@
+/* 반응형 responsive */
+/* desktop(1025px~) -> tablet(~1024px) -> mobile(~440px) */
+/* ===================================================== PC (1025px~) */
+@media screen and (min-width: 1025px) {
+    #wrap header nav .menu_btn {display: none;}
+    #wrap header nav .side_menu_bg {display: none;}
+}
+/* ===================================================== 태블릿 (~1024px) */
+@media screen and (max-width: 1024px) {
+    /* ============================================== 공통디자인 */
+    #wrap .title_box h1 em {font-family: "Montserrat", sans-serif; font-size: 2.38rem; font-weight: 600;}/* 타이틀 */
+    #wrap main .cta_wrap {padding-bottom: 80px;}/* CTA */
+    #wrap main .cta_wrap .cta_list {gap: 60px;}
+    #wrap main .cta_wrap .cta_list .cta_item a h1 {font-size: 1.13rem;}
+    #wrap main .cta_wrap .cta_list .cta_item p {font-size: 0.75rem;}
+    /* ----------------------------------------------- header */
+    #wrap header .notice_bnr .close_btn {right: 40px;}
+    #wrap header nav {padding:0 40px; height: 52px;}
+    #wrap header nav .menu_btn {display: block; padding: 10px;}
+    #wrap header nav .menu_btn img {width: 28px;}
+    #wrap header nav .gnb {display: none;}
+    /* ----------------------------------------------- main */
+    #wrap main {padding-top: 92px;}
+    /* ----------------------------------------------- 1. 히어로 배너 */
+    #wrap main .hero_bnr {height: 560px;}
+    #wrap main .hero_bnr .swiper-wrapper .swiper-slide a .text_box {left: 40px; bottom: 50px;}
+    #wrap main .hero_bnr .swiper-wrapper .swiper-slide a .text_box h1 {font-size: 2.38rem;}
+    #wrap main .hero_bnr .hero-pagination {bottom: 25px;}
+    #wrap main .hero_bnr .hero-pagination .swiper-pagination-current,
+    #wrap main .hero_bnr .hero-pagination .swiper-pagination-total {font-size: 1.13rem;}
+    #wrap main .hero_bnr .hero-prev {left: 20px;}
+    #wrap main .hero_bnr .hero-next {right: 20px;}
+    /* ----------------------------------------------- 2. 베스트셀러 */
+    #wrap main .best_wrap {padding: 80px 40px;}
+    /* ----------------------------------------------- 3. 롱슬리브 */
+    #wrap main .sleeve_wrap {flex-flow: column nowrap;}
+    #wrap main .sleeve_wrap .look_swiper {width: 100%; gap: 0; margin: 0 40px;}
+    #wrap main .sleeve_wrap .contents_wrap {width: 100%; gap: 30px; margin: 0 40px;}
+    #wrap main .sleeve_wrap .contents_wrap .title_box span {display: none;}
+    #wrap main .sleeve_wrap .contents_wrap .title_box .more_view {display: none;}
+    /* ----------------------------------------------- 4. 이벤트 배너 */
+    #wrap main .event_bnr {margin-bottom: 80px; height: 270px;}
+    /* ----------------------------------------------- 5. 데일리 셋업 */
+    #wrap main .setup_wrap {padding: 0 40px 80px;}
+    /* ----------------------------------------------- 6. 베스트 팬츠 */
+    #wrap main .pants_wrap {padding: 0 40px 80px;}
+    #wrap main .pants_wrap .pants_contents {flex-flow: column nowrap; gap: 0;}
+    #wrap main .pants_wrap .pants_contents .look_swiper {width: 100%;}
+    #wrap main .pants_wrap .pants_contents .title_clone {display: block;}/* 타이틀 클론 보이기 */
+    #wrap main .pants_wrap .pants_contents .contents {width: 100%;}
+    #wrap main .pants_wrap > .title_box {display: none;}/* 초기 상단 타이틀 숨기기 */
+    #wrap main .pants_wrap .title_box {flex-flow: column nowrap; align-items: start; margin: 50px 0 0 0;}
+    #wrap main .pants_wrap .title_box span {margin: 30px 0 70px;}
+    /* ----------------------------------------------- 7. 러닝 */
+    #wrap main .run_wrap {padding: 0 40px 80px;}
+    #wrap main .run_wrap .run_img {height: 300px;}
+    /* ----------------------------------------------- 8. 콜렉션 */
+    #wrap main .collection_wrap {padding: 0 40px 80px;}
+    #wrap main .collection_wrap .contents_box .collection:nth-child(3) {display: none;}
+    /* ----------------------------------------------- footer */
+    #wrap footer {
+        grid-template-columns: repeat(380px, 480px); gap: 30px;
+        grid-template-areas: 
+            'left center'
+            'company cert';
+        padding: 50px 40px;
+    }
+    #wrap footer .foot_right {display: contents;}/* 빈영역숨기기 */
+    #wrap footer .foot_center .sns {justify-content: end;}
+    #wrap footer .foot_right .foot_cert {justify-content: end; margin-bottom: 80px;}
+
+    /* ============================================== 상품 목록 페이지 (product_list) */
+    #wrap .list_pg {padding: 150px 40px 0;}
+    #wrap .list_pg .product_list_wrap .product_list {row-gap: 80px;}
+    #wrap .list_pg .product_list_wrap .product_list li {width: calc((100% - 40px) / 3); /* 3개 */}
+    #wrap .list_pg .page_wrap {margin-bottom: 100px;}
+
+    /* ============================================== 상세 페이지 (details) */
+    #wrap main .to_top_detail {position: fixed; right: 50px; bottom: 50px; z-index: 999;}/* 탑 버튼 위치 조정 */
+    #wrap .detail_pg {padding: 70px 40px 0;}
+    #wrap .detail_pg .detail_wrap {display: flex; flex-direction: column; padding: 60px 0;}
+    #wrap .detail_pg .detail_wrap .d_left {display: contents;}/* 부모 없애기 */
+    #wrap .detail_pg .detail_wrap .detail_swiper {order: 1;}/* 순서 재배치 */
+    #wrap .detail_pg .detail_wrap .d_right {
+        order: 2;/* 순서 재배치 */
+        position: static; /* 스티키 해제 */
+        max-height: none; overflow: visible; width: 100%;
+    }
+    #wrap .detail_pg .detail_wrap .tab_body {order: 3;}/* 순서 재배치 */
+}
+
+
+
+/* ===================================================== 모바일 (~440px) */
+@media screen and (max-width: 700px) {
+    /* ============================================== 공통디자인 */
+    #wrap main .to_top {right: 30px; bottom: 30px;}
+    #wrap .title_box h1 em {font-size: 1.75rem;}/* 타이틀 */
+    #wrap .title_box span {display: none;}/* 타이틀-설명 */
+    #wrap main .tab_menu > a {font-size: 0.81rem;}/* 탭메뉴 */
+    #wrap main .tab_more > a img {width: 24px;}/* +버튼 */
+    #wrap .product_box .name {margin: 20px 0 10px 0;}/* 제품명 */
+    #wrap main .pagi_scroll {margin-right: 20px;}/* 페이지 - 스크롤 */
+    #wrap main .swiper-pagination-current,
+    #wrap main .swiper-pagination-total {font-size: 0.88rem;}
+    #wrap .product_box .name {font-size: 0.94rem;}/* 제품명 */
+    #wrap .product_box .price {font-size: 0.88rem;}/* 가격 */
+    #wrap main .cta_wrap {padding-bottom: 60px;}/* CTA */
+    #wrap main .cta_wrap .cta_list {grid-template-columns: repeat(2, max-content); gap: 30px;}
+    #wrap main .cta_wrap .cta_list .cta_item a h1 {font-size: 0.88rem; margin: 12px 0;}
+    #wrap main .cta_wrap .cta_list .cta_item p {display: none;}
+    #wrap main .cta_wrap .cta_list .cta_item a img {width: 36px;}
+    /* -----------------------------------------------header */
+    #wrap header .notice_bnr {display: none;}
+    #wrap header nav {position: relative;}
+    #wrap header nav h1 .logo {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 84px;}
+    #wrap header nav {padding:0 20px; height: 60px;}
+    #wrap header nav .menu_btn img {width: 24px;}
+    #wrap header nav .search_mypage {gap: 0;}
+    #wrap header nav .search_mypage button {width: 48px; height: 48px;}
+    #wrap header nav .search_mypage button img {width: 24px;}
+    /* ----------------------------------------------- main */
+    #wrap main {padding-top: 60px;}
+    /* ----------------------------------------------- 1. 히어로 배너 */
+    #wrap main .hero_bnr {height: 410px;}
+    #wrap main .hero_bnr .swiper-wrapper .swiper-slide a .text_box {left: 20px; bottom: 60px;}
+    #wrap main .hero_bnr .swiper-wrapper .swiper-slide a .text_box h1 {font-size: 1.75rem; margin-bottom: 15px;}
+    #wrap main .hero_bnr .swiper-wrapper .swiper-slide a .text_box > p {font-size: 1rem;}
+    #wrap main .hero_bnr .hero-pagination {bottom: 15px;}
+    #wrap main .hero_bnr .hero-pagination .swiper-pagination-current,
+    #wrap main .hero_bnr .hero-pagination .swiper-pagination-total {font-size: 1rem;}
+    #wrap main .hero_bnr .hero-prev {left: 0px;}
+    #wrap main .hero_bnr .hero-next {right: 0px;}
+    /* ----------------------------------------------- 2. 베스트셀러 */
+    #wrap main .best_wrap {padding: 60px 0; position: relative;}
+    #wrap main .best_wrap .title_box {padding: 0 20px; margin: 0 0 30px;}
+    #wrap main .best_wrap .title_box h1 em {margin: 0;}
+    #wrap main .best_wrap .contents .tab_title {padding: 0 0 0 20px;}
+    #wrap main .best_wrap .contents .tab_title .tab_more {top: -60px; right: 20px;}
+    #wrap main .best_wrap .contents .tab_title .tab_swiper .best_tab_menu > a {font-size: 0.81rem;}
+    #wrap main .best_wrap .contents .tab_title .tab_more > a img {width: 24px;}
+
+    #wrap main .best_wrap .contents .tab_contents {padding-left: 20px;}
+    /* ----------------------------------------------- 3. 롱슬리브 */
+    #wrap main .sleeve_wrap {padding: 0 0 60px; gap: 30px;}
+    #wrap main .sleeve_wrap .look_swiper {margin: 0;}
+    #wrap main .sleeve_wrap .contents_wrap {position: relative; margin: 0; padding-left: 20px;}
+    #wrap main .sleeve_wrap .contents_wrap .contents .tab_title .tab_more {position: absolute; right: 20px; top: 0;}
+    /* ----------------------------------------------- 4. 이벤트 배너 */
+    #wrap main .event_bnr {
+        background-image: url(../images/product/zanmang_loopy_m.jpg);
+        height: 400px; margin-bottom: 60px;
+    }
+    /* ----------------------------------------------- 5. 데일리 셋업 */
+    #wrap main .setup_wrap {padding: 0 0 60px 20px;}
+    #wrap main .setup_wrap .title_more {padding: 0 20px 25px 0;}
+    #wrap main .setup_wrap .title_more .title_box h1 em {margin: 0;}
+    #wrap main .setup_wrap .setup_swiper .swiper-wrapper .swiper-slide .product_card img {width: 100px; height: 100px;}
+    #wrap main .setup_wrap .setup_swiper .swiper-wrapper .swiper-slide .product_card .price {margin: 12px 0 12px;}
+    #wrap main .setup_wrap .setup_swiper .swiper-wrapper .swiper-slide .product_card .color_chip span {width: 16px; height: 16px;}
+    /* ----------------------------------------------- 6. 베스트 팬츠 */
+    #wrap main .pants_wrap {padding: 0 0 60px;}
+    #wrap main .pants_wrap .title_box {margin: 30px 0; padding-left: 20px;}
+    #wrap main .pants_wrap .title_box h1 em {margin: 0;}
+    #wrap main .pants_wrap .pants_contents .look_swiper {width: 100%;}
+    #wrap main .pants_wrap .pants_contents .contents {position: relative; padding-left: 20px;}
+    #wrap main .pants_wrap .pants_contents .contents .tab_title {margin-bottom: 20px;}
+    #wrap main .pants_wrap .pants_contents .contents .tab_title .tab_more {position: absolute; right: 20px; top: -60px;}
+    /* ----------------------------------------------- 7. 러닝 */
+    #wrap main .run_wrap {padding: 0 0 60px 20px; position: relative;}
+    #wrap main .run_wrap .title_more {padding-right: 20px;}
+    #wrap main .run_wrap .title_more .title_box {margin-bottom: 25px;}
+    #wrap main .run_wrap .title_more .title_box h1 em {margin: 0;}
+    #wrap main .run_wrap .run_img {
+        background-image: url(../images/product/classic_running_m_.jpg);
+        height: 350px; margin-right: 20px;
+    }
+    #wrap main .run_wrap .run_swiper {margin-top: 20px;}
+    /* ----------------------------------------------- 8. 콜렉션 */
+    #wrap main .collection_wrap {padding: 0 20px 60px;}
+    #wrap main .collection_wrap .title_more .title_box {margin-bottom: 25px;}
+    #wrap main .collection_wrap .title_more .title_box h1 em {margin: 0;}
+    #wrap main .collection_wrap .contents_box .collection:nth-child(2) {display: none;}
+    #wrap main .collection_wrap .contents_box .collection .text_box h2 {font-size: 1.38rem;}
+    #wrap main .collection_wrap .contents_box .collection .text_box p {font-size: 0.94rem;}
+    /* ----------------------------------------------- footer */
+    #wrap footer {
+        grid-template-columns: 1fr; gap: 30px;
+        grid-template-areas: 
+        'left'
+        'center';
+        padding: 50px 20px;
+    }
+    #wrap footer .foot_left .foot_logo {width: 100px;}
+    #wrap footer .foot_left .foot_cs {margin: 20px 0;}
+    #wrap footer .foot_center .foot_menu {display: none;}
+    #wrap footer .foot_center .sns {justify-content: start;}
+    #wrap footer .foot_right {display: none;}
+    /* ============================================== 사이드메뉴 */
+    #wrap header nav .side_menu_bg .side_menu_inner {padding: 20px 30px;}
+    #wrap header nav .side_menu_bg .side_menu_inner .side_top .side_close img {width: 20px;}
+
+    /* ============================================== 서브페이지 (product_list) */
+    #wrap .list_pg {padding: 100px 20px 0;}
+    #wrap .list_pg .page_wrap {margin-bottom: 80px;}
+    #wrap .list_pg .product_list_wrap .product_list {row-gap: 50px;}
+    #wrap .list_pg .product_list_wrap .product_list li {width: calc((100% - 20px) / 2); /* 2개 */}
+    /* 신상품순 / 필터 버튼 */
+    #wrap .list_pg .cate_wrap .tab_filter {flex-flow: column nowrap; align-items: start;}
+    #wrap .list_pg .cate_wrap .tab_filter .tab_menu {margin-bottom: 20px;}
+    #wrap .list_pg .cate_wrap .tab_filter .drop_filter {justify-content: space-between; width: 100%;}
+    #wrap .list_pg .cate_wrap .tab_filter .drop_filter > a {
+        font-size: 0.88rem; width: 100%; display: flex; justify-content: space-between;
+    }
+    #wrap .list_pg .cate_wrap .tab_filter .drop_filter .filter_wrap .f_panel {min-width: 440px; max-width: 500px;}
+
+    /* ============================================== 상세 페이지 (details) */
+    #wrap .detail_pg {padding: 40px 20px 0;}
+}

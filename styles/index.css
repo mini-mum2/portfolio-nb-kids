@@ -1,0 +1,297 @@
+/* ====================================================================== main */
+/* ======================================================================1. 히어로 배너 */
+#wrap main {padding-top: 115px;}
+#wrap main .hero_bnr {
+    width: 100%; height: calc(100vh - 115px);
+}
+#wrap main .hero_bnr .swiper-wrapper {}
+#wrap main .hero_bnr .swiper-wrapper .swiper-slide {
+    background-size: cover; background-position: top;
+}
+#wrap main .hero_bnr .swiper-wrapper .slide1 {background-image: url(../images/product/banner_01.jpg);}
+#wrap main .hero_bnr .swiper-wrapper .slide2 {background-image: url(../images/product/banner_02.jpg);}
+#wrap main .hero_bnr .swiper-wrapper .slide3 {background-image: url(../images/product/banner_03.jpg);}
+#wrap main .hero_bnr .swiper-wrapper .swiper-slide a {
+    display: block; width: 100%; height: 100%;
+}
+#wrap main .hero_bnr .swiper-wrapper .swiper-slide a .text_box {
+    position: absolute; left: 80px; bottom: 100px;
+}
+#wrap main .hero_bnr .swiper-wrapper .swiper-slide a .text_box h1, 
+#wrap main .hero_bnr .swiper-wrapper .swiper-slide a .text_box > p {color: #fff;}
+#wrap main .hero_bnr .swiper-wrapper .swiper-slide a .text_box h1 {
+    font-family: "Montserrat", sans-serif; font-size: 2.63rem; font-weight: 600; margin-bottom: 20px;
+}
+#wrap main .hero_bnr .swiper-wrapper .swiper-slide a .text_box > p {font-size: 1.13rem; line-height: 150%;}
+/* ----------------------------------------------------------------------1. 히어로 배너(버튼) */
+#wrap main .hero_bnr .hero-pagination {}
+#wrap main .hero_bnr .hero-prev,
+#wrap main .hero_bnr .hero-next {
+    background-image: url(../images/common/btn_arrow.svg);
+    background-size: 80px;
+    background-position: center;
+    width: 80px; height: 80px;
+}
+#wrap main .hero_bnr .hero-prev {left: 40px; transform: translateY(-50%)}
+#wrap main .hero_bnr .hero-next {right: 40px; transform: translateY(-50%) scaleX(-1);}
+#wrap main .hero_bnr .hero-prev svg,
+#wrap main .hero_bnr .hero-next svg {display: none;}/* 기본버튼삭제 */
+/* ----------------------------------------------------------------------1. 히어로 배너(페이지번호) */
+#wrap main .hero_bnr .hero-pagination {
+    position: absolute; bottom: 70px; left: 50%; transform: translateX(-50%);
+    display: flex; align-items: center; gap: 16px; width: auto;
+}
+#wrap main .hero_bnr .hero-pagination .swiper-pagination-current,
+#wrap main .hero_bnr .hero-pagination .swiper-pagination-total {
+    color: #fff; font-size: 1.25rem;
+}
+#wrap main .hero_bnr .hero-pagination .custom-separator {
+    display: inline-block;
+    width: 50px; height: 1px; background-color: #fff;
+}
+/* ======================================================================2. 베스트셀러 */
+#wrap main .best_wrap {padding: 100px 80px;}
+#wrap main .best_wrap .title_box {display: flex; flex-flow: row nowrap; align-items: end; margin-bottom: 40px;}
+#wrap main .best_wrap .title_box h1 {}
+#wrap main .best_wrap .title_box h1 em {margin-right: 25px;}
+#wrap main .best_wrap .title_box span {}
+#wrap main .best_wrap .contents {}
+#wrap main .best_wrap .contents .tab_title {margin-bottom: 20px; position: relative;}
+#wrap main .best_wrap .contents .tab_title .tab_swiper {}
+#wrap main .best_wrap .contents .tab_title .tab_swiper .best_tab_menu {}
+#wrap main .best_wrap .contents .tab_title .tab_swiper .best_tab_menu > a {
+    background-color: #eee; color: #777; padding: 10px 18px; border-radius: 30px;
+    font-weight: 500; font-size: 0.94rem; text-wrap: nowrap;
+}
+#wrap main .best_wrap .contents .tab_title .tab_swiper .best_tab_menu > a.active {
+    background-color: #CF0A2C; color: #fff;
+}
+#wrap main .best_wrap .contents .tab_title .tab_swiper .best_tab_menu .swiper-slide {width: auto;}
+#wrap main .best_wrap .contents .tab_title .tab_more {
+    position: absolute; right: 0; bottom: 0; z-index: 2;
+}
+#wrap main .best_wrap .contents .tab_title .tab_more > a {}
+#wrap main .best_wrap .contents .tab_title .tab_more > a img {width:100%;}
+#wrap main .best_wrap .contents .tab_title .tab_more > a:hover img {}
+/* ----------------------------------------------------------------------2. 베스트셀러(swiper) */
+#wrap main .best_wrap .contents .tab_contents {}
+#wrap main .best_wrap .contents .tab_contents .swiper {
+    display: none; max-width: 1760px; position: relative;
+}
+#wrap main .best_wrap .contents .tab_contents .swiper.active {display: block;}
+#wrap main .best_wrap .contents .tab_contents .swiper .swiper-wrapper {}
+#wrap main .best_wrap .contents .tab_contents .swiper .swiper-wrapper .swiper-slide {}
+#wrap main .best_wrap .contents .tab_contents .swiper .swiper-wrapper .swiper-slide a {}
+#wrap main .best_wrap .contents .tab_contents .swiper .swiper-wrapper .swiper-slide a img {width:100%;}
+#wrap main .best_wrap .contents .tab_contents .swiper .swiper-wrapper .swiper-slide h2 {}
+#wrap main .best_wrap .contents .tab_contents .swiper .swiper-wrapper .swiper-slide .price {}
+/* ----------------------------------------------------------------------2. 베스트셀러(진행바) */
+#wrap main .best_wrap .contents .tab_contents .swiper .swiper-pagination {}
+#wrap main .best_wrap .contents .tab_contents .swiper .swiper-pagination-current {}
+#wrap main .best_wrap .contents .tab_contents .swiper .swiper-pagination-total {}
+#wrap main .best_wrap .contents .tab_contents .swiper .swiper-scrollbar {}
+#wrap main .best_wrap .contents .tab_contents .swiper .swiper-scrollbar-drag {}
+/* ======================================================================3. 롱 슬리브 */
+#wrap main .sleeve_wrap {display: flex; flex-flow: row nowrap; gap: 50px; padding: 0 80px 100px 0;}
+#wrap main .sleeve_wrap .look_swiper {}
+#wrap main .sleeve_wrap .look_swiper .swiper-wrapper {}
+#wrap main .sleeve_wrap .look_swiper .swiper-wrapper .swiper-slide {}
+#wrap main .sleeve_wrap .look_swiper .swiper-wrapper .swiper-slide img {width: 100%;}
+/* ----------------------------------------------------------------------3. 롱 슬리브(룩북 버튼) */
+#wrap main .sleeve_wrap .sleeve-prev svg,
+#wrap main .sleeve_wrap .sleeve-next svg {display: none;}/* 기본버튼삭제 */
+#wrap main .sleeve_wrap .look_swiper .sleeve-prev,
+#wrap main .sleeve_wrap .look_swiper .sleeve-next {
+    background-image: url(../images/common/btn_arrow.svg);
+    background-size: 80px; background-position: center;
+    width: 80px; height: 80px;
+}
+#wrap main .sleeve_wrap .look_swiper .sleeve-prev {}
+#wrap main .sleeve_wrap .look_swiper .sleeve-next {transform: scaleX(-1);}
+#wrap main .sleeve_wrap .contents_wrap {
+    width: calc(100% - 750px); display: flex; flex-flow: column nowrap; justify-content: space-between;
+}
+#wrap main .sleeve_wrap .contents_wrap .title_box {}
+#wrap main .sleeve_wrap .contents_wrap .title_box h1 {}
+#wrap main .sleeve_wrap .contents_wrap .title_box h1 em {}
+#wrap main .sleeve_wrap .contents_wrap .title_box span {margin: 30px 0 70px 0; display: block;}
+#wrap main .sleeve_wrap .contents_wrap .title_box .more_view {
+    padding: 14px 20px; border-radius: 50px; display: inline-block;
+    border: 1px solid #777; color: #777; font-weight: 500; font-size: 0.94rem;
+    transition: all 0.3s ease;
+}
+#wrap main .sleeve_wrap .contents_wrap .title_box .more_view:hover {
+    color: #fff; background: #CF0A2C; border: none;
+}
+#wrap main .sleeve_wrap .contents_wrap .title_box .more_view:hover img {filter: brightness(0) invert(1);}
+#wrap main .sleeve_wrap .contents_wrap .title_box .more_view img {margin-left: 10px;}
+#wrap main .sleeve_wrap .contents_wrap .contents {}
+#wrap main .sleeve_wrap .contents_wrap .contents .tab_title {
+    display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;
+}
+#wrap main .sleeve_wrap .contents_wrap .contents .tab_title .tab_menu {}
+#wrap main .sleeve_wrap .contents_wrap .contents .tab_title .tab_menu > a {}
+#wrap main .sleeve_wrap .contents_wrap .contents .tab_title .tab_menu > a.active {}
+#wrap main .sleeve_wrap .contents_wrap .contents .tab_title .tab_more {}
+#wrap main .sleeve_wrap .contents_wrap .contents .tab_title .tab_more > a {}
+#wrap main .sleeve_wrap .contents_wrap .contents .tab_title .tab_more > a img {}
+/* ----------------------------------------------------------------------3. 롱 슬리브(상품 swiper) */
+#wrap main .sleeve_wrap .contents_wrap .contents .tab_contents {}
+#wrap main .sleeve_wrap .contents_wrap .contents .tab_contents .stripe_swiper {width: 100%;}
+#wrap main .sleeve_wrap .contents_wrap .contents .tab_contents .stripe_swiper .swiper-wrapper {}
+#wrap main .sleeve_wrap .contents_wrap .contents .tab_contents .stripe_swiper .swiper-wrapper .swiper-slide {}
+#wrap main .sleeve_wrap .contents_wrap .contents .tab_contents .stripe_swiper .swiper-wrapper .swiper-slide > a {}
+#wrap main .sleeve_wrap .contents_wrap .contents .tab_contents .stripe_swiper .swiper-wrapper .swiper-slide > a > img {width: 100%;}
+#wrap main .sleeve_wrap .contents_wrap .contents .tab_contents .stripe_swiper .swiper-wrapper .swiper-slide h2 {}
+#wrap main .sleeve_wrap .contents_wrap .contents .tab_contents .stripe_swiper .swiper-wrapper .swiper-slide .price {}
+/* ----------------------------------------------------------------------3. 롱 슬리브(진행바) */
+#wrap main .sleeve_wrap .contents_wrap .contents .tab_contents .stripe_swiper .swiper-pagination {}
+#wrap main .sleeve_wrap .contents_wrap .contents .tab_contents .stripe_swiper .swiper-pagination-current {}
+#wrap main .sleeve_wrap .contents_wrap .contents .tab_contents .stripe_swiper .swiper-pagination-total {}
+#wrap main .sleeve_wrap .contents_wrap .contents .tab_contents .stripe_swiper .swiper-scrollbar {}
+#wrap main .sleeve_wrap .contents_wrap .contents .tab_contents .stripe_swiper .swiper-scrollbar-drag {}
+/* ======================================================================4. 이벤트 배너 */
+#wrap main .event_bnr {
+    background-image: url(../images/product/zanmang_loopy.jpg);
+    background-size: cover; background-position: center;
+    display: block;
+    height: 400px; margin-bottom: 100px;
+}
+/* ======================================================================5. 데일리 셋업 */
+#wrap main .setup_wrap {padding: 0 80px 100px;}
+#wrap main .setup_wrap .title_more {display: flex; justify-content: space-between; padding-bottom: 40px;}
+#wrap main .setup_wrap .title_more .title_box {display: flex; align-items: end;}
+#wrap main .setup_wrap .title_more .title_box h1 {}
+#wrap main .setup_wrap .title_more .title_box h1 em {margin-right: 25px;}
+#wrap main .setup_wrap .title_more .title_box span {}
+#wrap main .setup_wrap .title_more .title_box .tab_more {}
+#wrap main .setup_wrap .title_more .title_box .tab_more a {}
+#wrap main .setup_wrap .title_more .title_box .tab_more a img {}
+#wrap main .setup_wrap .setup_swiper {}
+#wrap main .setup_wrap .setup_swiper .swiper-wrapper {}
+#wrap main .setup_wrap .setup_swiper .swiper-wrapper .swiper-slide {}
+#wrap main .setup_wrap .setup_swiper .swiper-wrapper .swiper-slide .img_link {}
+#wrap main .setup_wrap .setup_swiper .swiper-wrapper .swiper-slide .img_link img {}
+#wrap main .setup_wrap .setup_swiper .swiper-wrapper .swiper-slide .product_card {
+    display: flex; gap: 20px; align-items: center; margin-top: 20px;
+}
+#wrap main .setup_wrap .setup_swiper .swiper-wrapper .swiper-slide .product_card img {width: 150px; height: 150px;}
+#wrap main .setup_wrap .setup_swiper .swiper-wrapper .swiper-slide .product_card {}
+#wrap main .setup_wrap .setup_swiper .swiper-wrapper .swiper-slide .product_card .name {margin: 0;}
+#wrap main .setup_wrap .setup_swiper .swiper-wrapper .swiper-slide .product_card .price {margin: 30px 0 20px;}
+#wrap main .setup_wrap .setup_swiper .swiper-wrapper .swiper-slide .product_card .color_chip {
+    display: flex; gap: 8px;
+}
+#wrap main .setup_wrap .setup_swiper .swiper-wrapper .swiper-slide .product_card .color_chip span {
+    width: 20px; height: 20px; border-radius: 50%;
+}
+/* ----------------------------------------------------------------------5. 데일리 셋업(진행바) */
+#wrap main .setup_wrap .setup_swiper .swiper-pagination {}
+#wrap main .setup_wrap .setup_swiper .swiper-pagination-current {}
+#wrap main .setup_wrap .setup_swiper .swiper-pagination-total {}
+#wrap main .setup_wrap .setup_swiper .swiper-scrollbar {}
+#wrap main .setup_wrap .setup_swiper .swiper-scrollbar-drag {}
+/* ======================================================================6. 베스트 팬츠 */
+#wrap main .pants_wrap {padding: 0 80px 100px;}
+#wrap main .pants_wrap .title_box {display: flex; flex-flow: row nowrap; align-items: end; margin-bottom: 40px;}
+#wrap main .pants_wrap .title_box h1 {}
+#wrap main .pants_wrap .title_box h1 em {margin-right: 25px;}
+#wrap main .pants_wrap .title_box span {}
+#wrap main .pants_wrap .pants_contents {display: flex; flex-flow: row nowrap; gap: 50px;}
+#wrap main .pants_wrap .pants_contents .look_swiper {}
+#wrap main .pants_wrap .pants_contents .look_swiper .swiper-wrapper {}
+#wrap main .pants_wrap .pants_contents .look_swiper .swiper-wrapper .swiper-slide {}
+#wrap main .pants_wrap .pants_contents .look_swiper .swiper-wrapper .swiper-slide img {width: 100%;}
+/* ----------------------------------------------------------------------6. 베스트 팬츠(룩북 버튼) */
+#wrap main .pants_wrap .pants-prev svg,
+#wrap main .pants_wrap .pants-next svg {display: none;}/* 기본버튼삭제 */
+#wrap main .pants_wrap .look_swiper .pants-prev,
+#wrap main .pants_wrap .look_swiper .pants-next {
+    background-image: url(../images/common/btn_arrow.svg);
+    background-size: 80px; background-position: center;
+    width: 80px; height: 80px;
+}
+#wrap main .pants_wrap .look_swiper .pants-prev {}
+#wrap main .pants_wrap .look_swiper .pants-next {transform: scaleX(-1);}
+#wrap main .pants_wrap .pants_contents .title_clone {display: none;}/* 클론 초기 숨기기 */
+#wrap main .pants_wrap .pants_contents .contents {width: calc(100% - 550px);}
+#wrap main .pants_wrap .pants_contents .contents .tab_title {display: flex; justify-content: space-between; margin-bottom: 40px;}
+#wrap main .pants_wrap .pants_contents .contents .tab_title .tab_menu {}
+#wrap main .pants_wrap .pants_contents .contents .tab_title .tab_menu a {}
+#wrap main .pants_wrap .pants_contents .contents .tab_title .tab_menu a.active {}
+#wrap main .pants_wrap .pants_contents .contents .tab_title .tab_more {}
+#wrap main .pants_wrap .pants_contents .contents .tab_title .tab_more a {}
+#wrap main .pants_wrap .pants_contents .contents .tab_title .tab_more a img {}
+#wrap main .pants_wrap .pants_contents .contents .tab_contents {}
+#wrap main .pants_wrap .pants_contents .contents .tab_contents .denim_swiper {}
+#wrap main .pants_wrap .pants_contents .contents .tab_contents .denim_swiper .swiper-wrapper {}
+#wrap main .pants_wrap .pants_contents .contents .tab_contents .denim_swiper .swiper-wrapper .swiper-slide {}
+#wrap main .pants_wrap .pants_contents .contents .tab_contents .denim_swiper .swiper-wrapper .swiper-slide a {}
+#wrap main .pants_wrap .pants_contents .contents .tab_contents .denim_swiper .swiper-wrapper .swiper-slide a > img {width: 100%;}
+#wrap main .pants_wrap .pants_contents .contents .tab_contents .denim_swiper .swiper-wrapper .swiper-slide .product_box {}
+#wrap main .pants_wrap .pants_contents .contents .tab_contents .denim_swiper .swiper-wrapper .swiper-slide .product_box .name {}
+#wrap main .pants_wrap .pants_contents .contents .tab_contents .denim_swiper .swiper-wrapper .swiper-slide .product_box .price {}
+
+/* ----------------------------------------------------------------------6. 베스트 팬츠(진행바) */
+#wrap main .pants_wrap .pants_contents .contents .tab_contents .denim_swiper .swiper-pagination {}
+#wrap main .pants_wrap .pants_contents .contents .tab_contents .denim_swiper .swiper-scrollbar {}
+/* ======================================================================7. 러닝 */
+#wrap main .run_wrap {padding: 0 80px 100px;}
+#wrap main .run_wrap .title_more {display: flex;  justify-content: space-between;}
+#wrap main .run_wrap .title_more .title_box {display: flex; align-items: end; margin-bottom: 40px;}
+#wrap main .run_wrap .title_more .title_box h1 {}
+#wrap main .run_wrap .title_more .title_box h1 em {margin-right: 25px;}
+#wrap main .run_wrap .title_more .title_box span {}
+#wrap main .run_wrap .tab_more {}
+#wrap main .run_wrap .tab_more a {}
+#wrap main .run_wrap .tab_more a img {}
+#wrap main .run_wrap .run_img {
+    background-image: url(../images/product/classic_running_.jpg);
+    background-size: cover; background-position: center; height: 400px;
+}
+#wrap main .run_wrap .run_swiper {margin-top: 30px;}
+#wrap main .run_wrap .run_swiper .swiper-wrapper {}
+#wrap main .run_wrap .run_swiper .swiper-wrapper .swiper-slide {}
+#wrap main .run_wrap .run_swiper .swiper-wrapper .swiper-slide a {}
+#wrap main .run_wrap .run_swiper .swiper-wrapper .swiper-slide a img {width: 100%;}
+#wrap main .run_wrap .run_swiper .swiper-wrapper .swiper-slide .product_box {}
+#wrap main .run_wrap .run_swiper .swiper-wrapper .swiper-slide .product_box .name {}
+#wrap main .run_wrap .run_swiper .swiper-wrapper .swiper-slide .product_box .price {}
+/* ----------------------------------------------------------------------7. 러닝(진행바) */
+#wrap main .run_wrap .run_swiper .swiper-pagination {}
+#wrap main .run_wrap .run_swiper .swiper-pagination-current {}
+#wrap main .run_wrap .run_swiper .swiper-pagination-total {}
+#wrap main .run_wrap .run_swiper .swiper-scrollbar {}
+#wrap main .run_wrap .run_swiper .swiper-scrollbar-drag {}
+/* ======================================================================8. 콜렉션 */
+#wrap main .collection_wrap {padding: 0 80px 100px;}
+#wrap main .collection_wrap .title_more {display: flex; justify-content: space-between;}
+#wrap main .collection_wrap .title_more .title_box {display: flex; align-items: end; margin-bottom: 40px;}
+#wrap main .collection_wrap .title_more .title_box h1 {}
+#wrap main .collection_wrap .title_more .title_box h1 em {margin-right: 25px;}
+#wrap main .collection_wrap .title_more .title_box span {}
+#wrap main .collection_wrap .title_more .title_box .tab_more {}
+#wrap main .collection_wrap .title_more .title_box .tab_more a {}
+#wrap main .collection_wrap .title_more .title_box .tab_more a img {}
+#wrap main .collection_wrap .contents_box {display: flex; flex-flow: row nowrap; gap: 20px;}
+#wrap main .collection_wrap .contents_box .collection {
+    position: relative; overflow: hidden; display: block;
+}
+#wrap main .collection_wrap .contents_box .collection::after {
+    content: ''; width: 100%; height: 100%; left: 0; top: 0;
+    position: absolute; z-index: 1;
+    background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0));
+}
+#wrap main .collection_wrap .contents_box .collection img {
+    width: 100%; transition: transform 0.5s ease; display: block;
+}
+#wrap main .collection_wrap .contents_box .collection:hover img {transform: scale(1.05);}
+#wrap main .collection_wrap .contents_box .collection .text_box {
+    position: absolute; z-index: 2; left: 30px; bottom: 50px;
+}
+#wrap main .collection_wrap .contents_box .collection .text_box h2 {
+    font-size: 1.63rem; font-weight: 500; margin-bottom: 20px; color: #fff;
+}
+#wrap main .collection_wrap .contents_box .collection .text_box p {
+    font-size: 1.03rem; color: #fff;
+}

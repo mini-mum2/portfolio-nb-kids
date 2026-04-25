@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="kakao" transform="translate(-60.93)">
+    <circle id="타원_1" data-name="타원 1" cx="25" cy="25" r="25" transform="translate(60.93)" fill="#fee503"/>
+    <g id="logo" transform="translate(74.319 13.388)">
+      <path id="패스_14365" data-name="패스 14365" d="M9.914,0C4.444,0,0,3.608,0,8.03c0,2.793,1.823,5.237,4.444,6.75L3.76,18.621l4.217-2.793a9.6,9.6,0,0,0,1.823.116c5.47,0,9.914-3.608,9.914-8.03C19.828,3.608,15.384,0,9.914,0" transform="translate(2.023 3.042)" fill="#2f2a03"/>
+      <rect id="사각형_8245" data-name="사각형 8245" width="24" height="24" transform="translate(-0.389 -0.388)" fill="#fff" opacity="0"/>
+    </g>
+  </g>
+</svg>
