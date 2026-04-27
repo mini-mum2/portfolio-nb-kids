@@ -87,7 +87,7 @@
         max-height: none; overflow: visible; width: 100%;
         padding: 30px 0;
     }
-    #wrap .detail_pg .detail_wrap .tab_body {order: 3;}/* 순서 재배치 */
+    #wrap .detail_pg .detail_wrap .d_left .tab_body {order: 3;}/* 순서 재배치 */
     #wrap .detail_pg .detail_wrap .d_left .tab_body .tab_sticky .detail_tab {top: 96px;}/* 헤더높이만큼 스티키 */
     #wrap .detail_pg .detail_wrap .d_left .tab_body .info_list {padding: 20px 30px;}
 }
@@ -221,7 +221,8 @@
     #wrap .detail_pg {padding: 40px 20px 0;}
     #wrap .detail_pg .detail_wrap .d_right {padding: 20px 0;}
     #wrap .detail_pg .detail_wrap .d_left .tab_body .tab_sticky .detail_tab {top: 60px;}/* 헤더높이만큼 스티키 */
-    #wrap .detail_pg .detail_wrap .d_left .tab_body .detail_body .info_list {padding:0 20px;}
-    #wrap .detail_pg .detail_wrap .d_left .tab_body .detail_tab > a {font-size: 1rem;}
-    #wrap .detail_pg .detail_wrap .d_left .tab_body .detail_body .info_list li > a {font-size: 1rem;}
+    #wrap .detail_pg .detail_wrap .d_left .tab_body .tab_sticky .detail_tab > a {font-size: 0.94rem;}
+    #wrap .detail_pg .detail_wrap .d_left .tab_body .info_list {padding:0 20px;}
+    #wrap .detail_pg .detail_wrap .d_left .tab_body .info_list li > a  {font-size: 1rem;}
+    #wrap .detail_pg .detail_wrap .d_right .cart_buy > a {font-size: 1rem;}
 }
