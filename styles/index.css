@@ -82,7 +82,7 @@
 #wrap main .best_wrap .contents .tab_contents .swiper .swiper-wrapper {}
 #wrap main .best_wrap .contents .tab_contents .swiper .swiper-wrapper .swiper-slide {}
 #wrap main .best_wrap .contents .tab_contents .swiper .swiper-wrapper .swiper-slide a {}
-#wrap main .best_wrap .contents .tab_contents .swiper .swiper-wrapper .swiper-slide a img {width:100%;}
+#wrap main .best_wrap .contents .tab_contents .swiper .swiper-wrapper .swiper-slide .img_link img {}
 #wrap main .best_wrap .contents .tab_contents .swiper .swiper-wrapper .swiper-slide h2 {}
 #wrap main .best_wrap .contents .tab_contents .swiper .swiper-wrapper .swiper-slide .price {}
 /* ----------------------------------------------------------------------2. 베스트셀러(진행바) */

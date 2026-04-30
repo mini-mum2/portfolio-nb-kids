@@ -103,6 +103,48 @@ const bottomSwiper = new Swiper(best[2], {
     draggable: true,
     }
 })
+const outerSwiper = new Swiper(best[3], {
+    slidesPerView: 5,
+    freeMode: true,
+    freeModeMomentum: true,
+    spaceBetween: 20,
+    pagination: {
+    el: '.outer_swiper .swiper-pagination',
+    type: 'fraction',
+    },
+    scrollbar: {
+    el: '.outer_swiper .swiper-scrollbar',
+    draggable: true,
+    }
+})
+const shoesSwiper = new Swiper(best[4], {
+    slidesPerView: 5,
+    freeMode: true,
+    freeModeMomentum: true,
+    spaceBetween: 20,
+    pagination: {
+    el: '.shoes_swiper .swiper-pagination',
+    type: 'fraction',
+    },
+    scrollbar: {
+    el: '.shoes_swiper .swiper-scrollbar',
+    draggable: true,
+    }
+})
+const goodsSwiper = new Swiper(best[5], {
+    slidesPerView: 5,
+    freeMode: true,
+    freeModeMomentum: true,
+    spaceBetween: 20,
+    pagination: {
+    el: '.goods_swiper .swiper-pagination',
+    type: 'fraction',
+    },
+    scrollbar: {
+    el: '.goods_swiper .swiper-scrollbar',
+    draggable: true,
+    }
+})
 //베스트셀러 탭메뉴
 //초기 상태 (첫번째만 보이기)
 best.forEach(function(el, i){
