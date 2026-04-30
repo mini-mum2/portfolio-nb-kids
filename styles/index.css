@@ -144,6 +144,8 @@
 #wrap main .sleeve_wrap .contents_wrap .contents .tab_contents .stripe_swiper .swiper-wrapper .swiper-slide > a > img {width: 100%;}
 #wrap main .sleeve_wrap .contents_wrap .contents .tab_contents .stripe_swiper .swiper-wrapper .swiper-slide h2 {}
 #wrap main .sleeve_wrap .contents_wrap .contents .tab_contents .stripe_swiper .swiper-wrapper .swiper-slide .price {}
+#wrap main .sleeve_wrap .contents_wrap .contents .tab_contents .swiper {display: none;}
+#wrap main .sleeve_wrap .contents_wrap .contents .tab_contents .swiper.active {display: block;}
 /* ----------------------------------------------------------------------3. 롱 슬리브(진행바) */
 #wrap main .sleeve_wrap .contents_wrap .contents .tab_contents .stripe_swiper .swiper-pagination {}
 #wrap main .sleeve_wrap .contents_wrap .contents .tab_contents .stripe_swiper .swiper-pagination-current {}
@@ -223,6 +225,8 @@
 #wrap main .pants_wrap .pants_contents .contents .tab_title .tab_more a {}
 #wrap main .pants_wrap .pants_contents .contents .tab_title .tab_more a img {}
 #wrap main .pants_wrap .pants_contents .contents .tab_contents {}
+#wrap main .pants_wrap .pants_contents .contents .tab_contents .swiper {display: none;}
+#wrap main .pants_wrap .pants_contents .contents .tab_contents .swiper.active {display: block;}
 #wrap main .pants_wrap .pants_contents .contents .tab_contents .denim_swiper {}
 #wrap main .pants_wrap .pants_contents .contents .tab_contents .denim_swiper .swiper-wrapper {}
 #wrap main .pants_wrap .pants_contents .contents .tab_contents .denim_swiper .swiper-wrapper .swiper-slide {}

@@ -173,6 +173,7 @@ best_title.forEach(function(tab, index) {
 });
 
 //========================================================3. 롱 슬리브
+//---------------------------------------------------------- 룩북 swiper
 const sleeveLook = document.querySelector('.look_swiper');
 //console.log(sleeveLook);
 const sleeveLookSwiper = new Swiper(sleeveLook, {
@@ -211,6 +212,79 @@ const stripeSwiper = new Swiper(sleeveList[0],{
     1025: {slidesPerView:3,}
     }
 })
+const dailySwiper = new Swiper(sleeveList[1],{
+    slidesPerView: 3,
+    freeMode: true,
+    freeModeMomentum: true,
+    spaceBetween: 20,
+    pagination: {
+        el: '.daily_swiper .swiper-pagination',
+        type: 'fraction',
+    },
+    scrollbar: {
+        el: '.daily_swiper .swiper-scrollbar',
+        draggable: true,
+    },
+    breakpoints: {
+    //모바일 (~700)
+    0: {slidesPerView: 1.5,},
+    //태블릿 (~1024)
+    700: {slidesPerView:3,},
+    //PC
+    1025: {slidesPerView:3,}
+    }
+})
+const coolSwiper = new Swiper(sleeveList[2],{
+    slidesPerView: 3,
+    freeMode: true,
+    freeModeMomentum: true,
+    spaceBetween: 20,
+    pagination: {
+        el: '.cool_swiper .swiper-pagination',
+        type: 'fraction',
+    },
+    scrollbar: {
+        el: '.cool_swiper .swiper-scrollbar',
+        draggable: true,
+    },
+    breakpoints: {
+    //모바일 (~700)
+    0: {slidesPerView: 1.5,},
+    //태블릿 (~1024)
+    700: {slidesPerView:3,},
+    //PC
+    1025: {slidesPerView:3,}
+    }
+})
+
+//탭메뉴 클릭
+const sleeveTitle = document.querySelectorAll('.sleeve_wrap .tab_menu a');
+//console.log(sleeveTitle);
+//초기 상태 (첫번째만 보이기)
+sleeveList.forEach(function(el, i){
+    if (i == 0) {
+        el.classList.add('active');
+    }
+    else {
+        el.classList.remove('active');
+    }
+})
+//탭 클릭
+sleeveTitle.forEach(function(tab, index) {
+    tab.addEventListener('click', function(e) {
+        e.preventDefault();
+        //탭 active 처리
+        sleeveTitle.forEach(function(t){
+            t.classList.remove('active');
+        });
+        tab.classList.add('active');
+        //swiper 보여주기
+        sleeveList.forEach(function(swiper) {
+            swiper.classList.remove('active');
+        });
+        sleeveList[index].classList.add('active');
+    });
+});
 //========================================================5. 데일리 셋업
 const setup = document.querySelector('.setup_swiper');
 //console.log(setup);
@@ -237,6 +311,7 @@ const setupSwiper = new Swiper(setup, {
     }
 })
 //========================================================6. 베스트 팬츠
+//---------------------------------------------------------- 룩북 swiper
 const pantsLook = document.querySelector('.pants_contents .look_swiper');
 //console.log(pantsLook);
 const pantsLookSwiper = new Swiper(pantsLook, {
@@ -253,7 +328,7 @@ const pantsLookSwiper = new Swiper(pantsLook, {
 //---------------------------------------------------------- 상품 swiper
 const pantsList = document.querySelectorAll('.pants_wrap .tab_contents .swiper');
 //console.log(pantsList[0]);
-const denimSwiper = new Swiper(pantsList[0],{
+const denimsSwiper = new Swiper(pantsList[0],{
     slidesPerView: 3,
     freeMode: true,
     freeModeMomentum: true,
@@ -275,6 +350,81 @@ const denimSwiper = new Swiper(pantsList[0],{
     1025: {slidesPerView:3,}
     }
 })
+const swetSwiper = new Swiper(pantsList[1],{
+    slidesPerView: 3,
+    freeMode: true,
+    freeModeMomentum: true,
+    spaceBetween: 20,
+    pagination: {
+        el: '.swet_swiper .swiper-pagination',
+        type: 'fraction',
+    },
+    scrollbar: {
+        el: '.swet_swiper .swiper-scrollbar',
+        draggable: true,
+    },
+    breakpoints: {
+    //모바일 (~700)
+    0: {slidesPerView: 1.2,},
+    //태블릿 (~1024)
+    700: {slidesPerView:3,},
+    //PC
+    1025: {slidesPerView:3,}
+    }
+})
+const wovenSwiper = new Swiper(pantsList[2],{
+    slidesPerView: 3,
+    freeMode: true,
+    freeModeMomentum: true,
+    spaceBetween: 20,
+    pagination: {
+        el: '.woven_swiper .swiper-pagination',
+        type: 'fraction',
+    },
+    scrollbar: {
+        el: '.woven_swiper .swiper-scrollbar',
+        draggable: true,
+    },
+    breakpoints: {
+    //모바일 (~700)
+    0: {slidesPerView: 1.2,},
+    //태블릿 (~1024)
+    700: {slidesPerView:3,},
+    //PC
+    1025: {slidesPerView:3,}
+    }
+})
+
+//탭메뉴 클릭
+const pantsTabTitle = document.querySelectorAll('.pants_wrap .tab_menu a');
+//console.log(pantsTabTitle);
+//초기 상태 (첫번째만 보이기)
+pantsList.forEach(function(el, i){
+    if (i == 0) {
+        el.classList.add('active');
+    }
+    else {
+        el.classList.remove('active');
+    }
+})
+//탭 클릭
+pantsTabTitle.forEach(function(tab, index) {
+    tab.addEventListener('click', function(e) {
+        e.preventDefault();
+        //탭 active 처리
+        pantsTabTitle.forEach(function(t){
+            t.classList.remove('active');
+        });
+        tab.classList.add('active');
+        //swiper 보여주기
+        pantsList.forEach(function(swiper) {
+            swiper.classList.remove('active');
+        });
+        pantsList[index].classList.add('active');
+    });
+});
+
+
 //---------------------------------------------------------- 타이틀 clone
 const pantsTitle = document.querySelector('.pants_wrap .title_box');
 const pantsClone = document.querySelector('.pants_wrap .title_clone');
