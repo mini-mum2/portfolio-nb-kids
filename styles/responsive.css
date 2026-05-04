@@ -69,7 +69,7 @@
     #wrap footer .foot_center .sns {justify-content: end;}
     #wrap footer .foot_right .foot_cert {justify-content: end; margin-bottom: 80px;}
 
-    /* ============================================== 상품 목록 페이지 (product_list) */
+    /* ============================================== 서브 페이지 (product_list) */
     #wrap .list_pg {padding: 150px 40px 0;}
     #wrap .list_pg .product_list_wrap .product_list {row-gap: 80px;}
     #wrap .list_pg .product_list_wrap .product_list li {width: calc((100% - 40px) / 3); /* 3개 */}
@@ -94,7 +94,7 @@
 
 
 
-/* ===================================================== 모바일 (~440px) */
+/* ===================================================== 모바일 (~700px) */
 @media screen and (max-width: 700px) {
     /* ============================================== 공통디자인 */
     #wrap main .to_top {right: 30px; bottom: 30px;}

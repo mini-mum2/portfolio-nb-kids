@@ -5,7 +5,7 @@
  * WARNING: This script does not process real transactions or user credentials.
  * All functions are for demonstration purposes only.
  */
-//========================================================1. 히어로 배너
+//=============================================================== 1. 히어로 배너
 const heroBnr = document.querySelector('.hero_bnr');
 //console.log(heroBnr);
 
@@ -38,7 +38,7 @@ const heroSlide = new Swiper(heroBnr,{
     },
 })
 
-//========================================================2. 베스트셀러
+//=============================================================== 2. 베스트셀러
 const best = document.querySelectorAll('.best_wrap .tab_contents .swiper');
 const best_title = document.querySelectorAll('.best_wrap .best_tab_menu a');
 //console.log(best, best_title);
@@ -87,6 +87,14 @@ const topSwiper = new Swiper(best[1], {
     scrollbar: {
         el: '.top_swiper .swiper-scrollbar',
         draggable: true,
+    },
+    breakpoints: {
+        //모바일 (~700)
+        0: {slidesPerView: 1.5,},
+        //태블릿 (~1024)
+        700: {slidesPerView:3,},
+        //PC
+        1025: {slidesPerView:5,}
     }
 });
 const bottomSwiper = new Swiper(best[2], {
@@ -101,6 +109,14 @@ const bottomSwiper = new Swiper(best[2], {
     scrollbar: {
     el: '.bottom_swiper .swiper-scrollbar',
     draggable: true,
+    },
+    breakpoints: {
+        //모바일 (~700)
+        0: {slidesPerView: 1.5,},
+        //태블릿 (~1024)
+        700: {slidesPerView:3,},
+        //PC
+        1025: {slidesPerView:5,}
     }
 })
 const outerSwiper = new Swiper(best[3], {
@@ -115,6 +131,14 @@ const outerSwiper = new Swiper(best[3], {
     scrollbar: {
     el: '.outer_swiper .swiper-scrollbar',
     draggable: true,
+    },
+    breakpoints: {
+        //모바일 (~700)
+        0: {slidesPerView: 1.5,},
+        //태블릿 (~1024)
+        700: {slidesPerView:3,},
+        //PC
+        1025: {slidesPerView:5,}
     }
 })
 const shoesSwiper = new Swiper(best[4], {
@@ -129,6 +153,14 @@ const shoesSwiper = new Swiper(best[4], {
     scrollbar: {
     el: '.shoes_swiper .swiper-scrollbar',
     draggable: true,
+    },
+    breakpoints: {
+        //모바일 (~700)
+        0: {slidesPerView: 1.5,},
+        //태블릿 (~1024)
+        700: {slidesPerView:3,},
+        //PC
+        1025: {slidesPerView:5,}
     }
 })
 const goodsSwiper = new Swiper(best[5], {
@@ -143,14 +175,25 @@ const goodsSwiper = new Swiper(best[5], {
     scrollbar: {
     el: '.goods_swiper .swiper-scrollbar',
     draggable: true,
+    },
+    breakpoints: {
+        //모바일 (~700)
+        0: {slidesPerView: 1.5,},
+        //태블릿 (~1024)
+        700: {slidesPerView:3,},
+        //PC
+        1025: {slidesPerView:5,}
     }
 })
+
 //베스트셀러 탭메뉴
-//초기 상태 (첫번째만 보이기)
+//초기 상태 (첫번째 탭만 보이기)
 best.forEach(function(el, i){
+    //첫번째 탭만 보이기(active 추가)
     if (i == 0) {
         el.classList.add('active');
     }
+    //나머지는 전부 숨기기(active 제거)
     else {
         el.classList.remove('active');
     }
@@ -159,20 +202,22 @@ best.forEach(function(el, i){
 best_title.forEach(function(tab, index) {
     tab.addEventListener('click', function(e) {
         e.preventDefault();
-        //탭 active 처리
+        //모든 탭 active 제거(초기화)
         best_title.forEach(function(t){
             t.classList.remove('active');
         });
+        //클릭한 탭만 active 추가
         tab.classList.add('active');
-        //swiper 보여주기
+        //모든 상품 리스트 숨김(active 제거)
         best.forEach(function(swiper) {
             swiper.classList.remove('active');
         });
+        //클릭한 카테고리 상품만 보이기(active 추가)
         best[index].classList.add('active');
     });
 });
 
-//========================================================3. 롱 슬리브
+//=============================================================== 3. 롱 슬리브
 //---------------------------------------------------------- 룩북 swiper
 const sleeveLook = document.querySelector('.look_swiper');
 //console.log(sleeveLook);
@@ -285,7 +330,7 @@ sleeveTitle.forEach(function(tab, index) {
         sleeveList[index].classList.add('active');
     });
 });
-//========================================================5. 데일리 셋업
+//=============================================================== 5. 데일리 셋업
 const setup = document.querySelector('.setup_swiper');
 //console.log(setup);
 const setupSwiper = new Swiper(setup, {
@@ -310,7 +355,7 @@ const setupSwiper = new Swiper(setup, {
     1025: {slidesPerView:3,}
     }
 })
-//========================================================6. 베스트 팬츠
+//=============================================================== 6. 베스트 팬츠
 //---------------------------------------------------------- 룩북 swiper
 const pantsLook = document.querySelector('.pants_contents .look_swiper');
 //console.log(pantsLook);
@@ -424,7 +469,6 @@ pantsTabTitle.forEach(function(tab, index) {
     });
 });
 
-
 //---------------------------------------------------------- 타이틀 clone
 const pantsTitle = document.querySelector('.pants_wrap .title_box');
 const pantsClone = document.querySelector('.pants_wrap .title_clone');
@@ -433,7 +477,7 @@ const pantsClone = document.querySelector('.pants_wrap .title_clone');
 const pantsTitleClone = pantsTitle.cloneNode(true);
 pantsClone.appendChild(pantsTitleClone);
 
-//========================================================7. 러닝
+//=============================================================== 7. 러닝
 const running = document.querySelector('.run_swiper');
 //console.log(running);
 const runSwiper = new Swiper(running, {

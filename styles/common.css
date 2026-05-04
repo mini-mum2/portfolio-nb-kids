@@ -8,7 +8,7 @@ Any resemblance to real-world commercial sites is purely for design practice.
 /* ====================================================================== 공통 디자인 */
 body, html {scroll-behavior: smooth;}/* 스크롤 부드럽게 */
 #wrap > * {min-width: 320px;}
-/* ====================================================================== (고정) 위로가기 버튼 */
+/* ---------------------------------------------------------------------- (고정) 위로가기 버튼 */
 #wrap main .to_top {position: fixed; right: 80px; bottom: 50px; z-index: 999;}
 #wrap main .to_top img {width: 100%;}
 /* ---------------------------------------------------------------------- 상품이미지 hover 효과 */

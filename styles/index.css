@@ -1,5 +1,5 @@
 /* ====================================================================== main */
-/* ======================================================================1. 히어로 배너 */
+/* ====================================================================== 1. 히어로 배너 */
 #wrap main {padding-top: 115px;}
 #wrap main .hero_bnr {
     width: 100%; height: calc(100vh - 115px);
@@ -23,7 +23,7 @@
     font-family: "Montserrat", sans-serif; font-size: 2.63rem; font-weight: 600; margin-bottom: 20px;
 }
 #wrap main .hero_bnr .swiper-wrapper .swiper-slide a .text_box > p {font-size: 1.13rem; line-height: 150%;}
-/* ----------------------------------------------------------------------1. 히어로 배너(버튼) */
+/* ---------------------------------------------------------------------- 1. 히어로 배너(버튼) */
 #wrap main .hero_bnr .hero-pagination {}
 #wrap main .hero_bnr .hero-prev,
 #wrap main .hero_bnr .hero-next {
@@ -36,7 +36,7 @@
 #wrap main .hero_bnr .hero-next {right: 40px; transform: translateY(-50%) scaleX(-1);}
 #wrap main .hero_bnr .hero-prev svg,
 #wrap main .hero_bnr .hero-next svg {display: none;}/* 기본버튼삭제 */
-/* ----------------------------------------------------------------------1. 히어로 배너(페이지번호) */
+/* ---------------------------------------------------------------------- 1. 히어로 배너(페이지번호) */
 #wrap main .hero_bnr .hero-pagination {
     position: absolute; bottom: 70px; left: 50%; transform: translateX(-50%);
     display: flex; align-items: center; gap: 16px; width: auto;
@@ -49,7 +49,7 @@
     display: inline-block;
     width: 50px; height: 1px; background-color: #fff;
 }
-/* ======================================================================2. 베스트셀러 */
+/* ====================================================================== 2. 베스트셀러 */
 #wrap main .best_wrap {padding: 100px 80px;}
 #wrap main .best_wrap .title_box {display: flex; flex-flow: row nowrap; align-items: end; margin-bottom: 40px;}
 #wrap main .best_wrap .title_box h1 {}
@@ -73,7 +73,7 @@
 #wrap main .best_wrap .contents .tab_title .tab_more > a {}
 #wrap main .best_wrap .contents .tab_title .tab_more > a img {width:100%;}
 #wrap main .best_wrap .contents .tab_title .tab_more > a:hover img {}
-/* ----------------------------------------------------------------------2. 베스트셀러(swiper) */
+/* ---------------------------------------------------------------------- 2. 베스트셀러(swiper) */
 #wrap main .best_wrap .contents .tab_contents {}
 #wrap main .best_wrap .contents .tab_contents .swiper {
     display: none; max-width: 1760px; position: relative;
@@ -85,19 +85,19 @@
 #wrap main .best_wrap .contents .tab_contents .swiper .swiper-wrapper .swiper-slide .img_link img {}
 #wrap main .best_wrap .contents .tab_contents .swiper .swiper-wrapper .swiper-slide h2 {}
 #wrap main .best_wrap .contents .tab_contents .swiper .swiper-wrapper .swiper-slide .price {}
-/* ----------------------------------------------------------------------2. 베스트셀러(진행바) */
+/* ---------------------------------------------------------------------- 2. 베스트셀러(진행바) */
 #wrap main .best_wrap .contents .tab_contents .swiper .swiper-pagination {}
 #wrap main .best_wrap .contents .tab_contents .swiper .swiper-pagination-current {}
 #wrap main .best_wrap .contents .tab_contents .swiper .swiper-pagination-total {}
 #wrap main .best_wrap .contents .tab_contents .swiper .swiper-scrollbar {}
 #wrap main .best_wrap .contents .tab_contents .swiper .swiper-scrollbar-drag {}
-/* ======================================================================3. 롱 슬리브 */
+/* ====================================================================== 3. 롱 슬리브 */
 #wrap main .sleeve_wrap {display: flex; flex-flow: row nowrap; gap: 50px; padding: 0 80px 100px 0;}
 #wrap main .sleeve_wrap .look_swiper {}
 #wrap main .sleeve_wrap .look_swiper .swiper-wrapper {}
 #wrap main .sleeve_wrap .look_swiper .swiper-wrapper .swiper-slide {}
 #wrap main .sleeve_wrap .look_swiper .swiper-wrapper .swiper-slide img {width: 100%;}
-/* ----------------------------------------------------------------------3. 롱 슬리브(룩북 버튼) */
+/* ---------------------------------------------------------------------- 3. 롱 슬리브(룩북 버튼) */
 #wrap main .sleeve_wrap .sleeve-prev svg,
 #wrap main .sleeve_wrap .sleeve-next svg {display: none;}/* 기본버튼삭제 */
 #wrap main .sleeve_wrap .look_swiper .sleeve-prev,
@@ -135,7 +135,7 @@
 #wrap main .sleeve_wrap .contents_wrap .contents .tab_title .tab_more {}
 #wrap main .sleeve_wrap .contents_wrap .contents .tab_title .tab_more > a {}
 #wrap main .sleeve_wrap .contents_wrap .contents .tab_title .tab_more > a img {}
-/* ----------------------------------------------------------------------3. 롱 슬리브(상품 swiper) */
+/* ---------------------------------------------------------------------- 3. 롱 슬리브(상품 swiper) */
 #wrap main .sleeve_wrap .contents_wrap .contents .tab_contents {}
 #wrap main .sleeve_wrap .contents_wrap .contents .tab_contents .stripe_swiper {width: 100%;}
 #wrap main .sleeve_wrap .contents_wrap .contents .tab_contents .stripe_swiper .swiper-wrapper {}
@@ -146,20 +146,20 @@
 #wrap main .sleeve_wrap .contents_wrap .contents .tab_contents .stripe_swiper .swiper-wrapper .swiper-slide .price {}
 #wrap main .sleeve_wrap .contents_wrap .contents .tab_contents .swiper {display: none;}
 #wrap main .sleeve_wrap .contents_wrap .contents .tab_contents .swiper.active {display: block;}
-/* ----------------------------------------------------------------------3. 롱 슬리브(진행바) */
+/* ---------------------------------------------------------------------- 3. 롱 슬리브(진행바) */
 #wrap main .sleeve_wrap .contents_wrap .contents .tab_contents .stripe_swiper .swiper-pagination {}
 #wrap main .sleeve_wrap .contents_wrap .contents .tab_contents .stripe_swiper .swiper-pagination-current {}
 #wrap main .sleeve_wrap .contents_wrap .contents .tab_contents .stripe_swiper .swiper-pagination-total {}
 #wrap main .sleeve_wrap .contents_wrap .contents .tab_contents .stripe_swiper .swiper-scrollbar {}
 #wrap main .sleeve_wrap .contents_wrap .contents .tab_contents .stripe_swiper .swiper-scrollbar-drag {}
-/* ======================================================================4. 이벤트 배너 */
+/* ====================================================================== 4. 이벤트 배너 */
 #wrap main .event_bnr {
     background-image: url(../images/product/zanmang_loopy.jpg);
     background-size: cover; background-position: center;
     display: block;
     height: 400px; margin-bottom: 100px;
 }
-/* ======================================================================5. 데일리 셋업 */
+/* ====================================================================== 5. 데일리 셋업 */
 #wrap main .setup_wrap {padding: 0 80px 100px;}
 #wrap main .setup_wrap .title_more {display: flex; justify-content: space-between; padding-bottom: 40px;}
 #wrap main .setup_wrap .title_more .title_box {display: flex; align-items: end;}
@@ -187,13 +187,13 @@
 #wrap main .setup_wrap .setup_swiper .swiper-wrapper .swiper-slide .product_card .color_chip span {
     width: 20px; height: 20px; border-radius: 50%;
 }
-/* ----------------------------------------------------------------------5. 데일리 셋업(진행바) */
+/* ---------------------------------------------------------------------- 5. 데일리 셋업(진행바) */
 #wrap main .setup_wrap .setup_swiper .swiper-pagination {}
 #wrap main .setup_wrap .setup_swiper .swiper-pagination-current {}
 #wrap main .setup_wrap .setup_swiper .swiper-pagination-total {}
 #wrap main .setup_wrap .setup_swiper .swiper-scrollbar {}
 #wrap main .setup_wrap .setup_swiper .swiper-scrollbar-drag {}
-/* ======================================================================6. 베스트 팬츠 */
+/* ====================================================================== 6. 베스트 팬츠 */
 #wrap main .pants_wrap {padding: 0 80px 100px;}
 #wrap main .pants_wrap .title_box {display: flex; flex-flow: row nowrap; align-items: end; margin-bottom: 40px;}
 #wrap main .pants_wrap .title_box h1 {}
@@ -204,7 +204,7 @@
 #wrap main .pants_wrap .pants_contents .look_swiper .swiper-wrapper {}
 #wrap main .pants_wrap .pants_contents .look_swiper .swiper-wrapper .swiper-slide {}
 #wrap main .pants_wrap .pants_contents .look_swiper .swiper-wrapper .swiper-slide img {width: 100%;}
-/* ----------------------------------------------------------------------6. 베스트 팬츠(룩북 버튼) */
+/* ---------------------------------------------------------------------- 6. 베스트 팬츠(룩북 버튼) */
 #wrap main .pants_wrap .pants-prev svg,
 #wrap main .pants_wrap .pants-next svg {display: none;}/* 기본버튼삭제 */
 #wrap main .pants_wrap .look_swiper .pants-prev,
@@ -236,10 +236,10 @@
 #wrap main .pants_wrap .pants_contents .contents .tab_contents .denim_swiper .swiper-wrapper .swiper-slide .product_box .name {}
 #wrap main .pants_wrap .pants_contents .contents .tab_contents .denim_swiper .swiper-wrapper .swiper-slide .product_box .price {}
 
-/* ----------------------------------------------------------------------6. 베스트 팬츠(진행바) */
+/* ---------------------------------------------------------------------- 6. 베스트 팬츠(진행바) */
 #wrap main .pants_wrap .pants_contents .contents .tab_contents .denim_swiper .swiper-pagination {}
 #wrap main .pants_wrap .pants_contents .contents .tab_contents .denim_swiper .swiper-scrollbar {}
-/* ======================================================================7. 러닝 */
+/* ====================================================================== 7. 러닝 */
 #wrap main .run_wrap {padding: 0 80px 100px;}
 #wrap main .run_wrap .title_more {display: flex;  justify-content: space-between;}
 #wrap main .run_wrap .title_more .title_box {display: flex; align-items: end; margin-bottom: 40px;}
@@ -261,13 +261,13 @@
 #wrap main .run_wrap .run_swiper .swiper-wrapper .swiper-slide .product_box {}
 #wrap main .run_wrap .run_swiper .swiper-wrapper .swiper-slide .product_box .name {}
 #wrap main .run_wrap .run_swiper .swiper-wrapper .swiper-slide .product_box .price {}
-/* ----------------------------------------------------------------------7. 러닝(진행바) */
+/* ---------------------------------------------------------------------- 7. 러닝(진행바) */
 #wrap main .run_wrap .run_swiper .swiper-pagination {}
 #wrap main .run_wrap .run_swiper .swiper-pagination-current {}
 #wrap main .run_wrap .run_swiper .swiper-pagination-total {}
 #wrap main .run_wrap .run_swiper .swiper-scrollbar {}
 #wrap main .run_wrap .run_swiper .swiper-scrollbar-drag {}
-/* ======================================================================8. 콜렉션 */
+/* ====================================================================== 8. 콜렉션 */
 #wrap main .collection_wrap {padding: 0 80px 100px;}
 #wrap main .collection_wrap .title_more {display: flex; justify-content: space-between;}
 #wrap main .collection_wrap .title_more .title_box {display: flex; align-items: end; margin-bottom: 40px;}
